@@ -1,0 +1,65 @@
+ 
+
+ body{
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ .container{
+   
+
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+ .hex-colors{
+    
+
+    text-align: center;
+ }
+
+ .hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: changecolor 3s infinite alternate;
+ }
+
+ .hex-colors h2{
+    border: 1px soild black;
+    font-size: 2rem;
+    margin-top: 15%;
+ }
+
+ @keyframes changecolor{
+    0%{
+        color: indigo;
+    }
+
+    20%{
+        color: yellow;
+    }
+
+    40%{
+        color: pink;
+    }
+
+    60%{
+        color: green;
+    }
+
+    80%{
+        color: blueviolet;
+    }
+ }
+
+
+ @media (max-width: 480pa){
+ .hex-colors h1{
+   font-size: 1.5rem;
+ }
+ .hex-colors h2{
+   font-size: 1.5rem;
+ }
+ }
